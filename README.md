@@ -7,7 +7,7 @@ Supported versions:
 - [plivo v0.3.3](https://github.com/plivo/plivo-node)
 - [Meteor v1.3.x](https://guide.meteor.com/1.3-migration.html)
 
-Add Settings to Access PlivoAPI object globally. In example:
+Add Settings to Access PlivoAPI object globally into `Meteor.settings.plivo`. In example:
 
 ````json
 {
@@ -22,9 +22,9 @@ Then you can use PlivoAPI object globally:
 
 ```javascript
 var params = {
-  from: '<your number>',
-  to: '<recipient's number>',
-  answer_url: 'http://your-server.com/answer_url',
+  from: 'your number here',
+  to: 'recipients number',
+  answer_url: 'http://your-server.com/answer_url'
 };
 
 PlivoAPI.make_call(params, function(status, response) {
