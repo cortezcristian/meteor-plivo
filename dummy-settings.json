@@ -1,0 +1,6 @@
+{
+  "plivo": {
+    "authToken": "some token",
+    "authId": "some id"
+  }
+}
