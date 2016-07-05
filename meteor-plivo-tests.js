@@ -1,7 +1,7 @@
 import { chai } from 'meteor/practicalmeteor:chai';
 
 // Import and rename a variable exported by meteor-plivo.js.
-import { name as packageName } from "meteor/meteor-plivo";
+import { name as packageName } from "meteor/cortezcristian:meteor-plivo";
 
 describe('Meteor Plivo Tests', () => {
   it('Package', () =>{
