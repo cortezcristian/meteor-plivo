@@ -2,6 +2,8 @@ language: node_js
 node_js:
 - 5.7
 before_script:
-- sudo curl https://install.meteor.com/ | /bin/sh && sudo npm install -g spacejam
+- sudo curl https://install.meteor.com/ | /bin/sh
+before_script:
+- sudo npm install -g spacejam
 script:
 - spacejam test-packages --driver-package=practicalmeteor:mocha-console-reporter ./ --settings ./dummy-settings.json
