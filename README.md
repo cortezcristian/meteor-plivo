@@ -5,11 +5,11 @@ Plivo NodeJS client API port for Meteor to create powerful Voice and SMS applica
 Supported versions:
 
 - [plivo v0.3.3](https://github.com/plivo/plivo-node)
-- [Meteor v1.3.x](https://guide.meteor.com/1.3-migration.html)
+- [Meteor v1.3.3](https://guide.meteor.com/1.3-migration.html)
 
 Add Settings to Access PlivoAPI object globally into `Meteor.settings.plivo`. In example:
 
-````json
+```json
 {
   "plivo": {
     "authToken": "some token",
@@ -17,6 +17,13 @@ Add Settings to Access PlivoAPI object globally into `Meteor.settings.plivo`. In
   }
 }
 ```
+
+Install:
+
+```sh
+$ meteor add cortezcristian:meteor-plivo
+```
+
 
 Then you can use PlivoAPI object globally:
 
