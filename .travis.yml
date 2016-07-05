@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - 5.7
-before_install:
+before_script:
 - curl https://install.meteor.com/ | sh
 script:
 - meteor test-packages ./ --settings ./dummy-settings.json
