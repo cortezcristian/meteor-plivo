@@ -4,7 +4,7 @@
 // applications. See meteor-plivo-tests.js for an example of importing.
 export const name = 'meteor-plivo';
 export const Plivo = Npm.require('plivo');
-export const PlivoResponse() => Plivo.Response()
+export const PlivoResponse = () => Plivo.Response()
 
 if (!Meteor.settings.plivo) {
     throw new Meteor.Error(404, 'Plivo settings authID and authToken are not provided, please add them to Meteor.settings.plivo');
