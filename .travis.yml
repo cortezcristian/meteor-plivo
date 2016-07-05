@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- "5.7"
+- 5.7
 before_install:
-- "curl -L http://git.io/ejPSng | /bin/sh"
+- curl https://install.meteor.com/ | sh
 script:
 - meteor test-packages ./ --settings ./dummy-settings.json
