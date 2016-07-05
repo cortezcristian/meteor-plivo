@@ -5,16 +5,17 @@
 export const name = 'meteor-plivo';
 export const Plivo = Npm.require('plivo');
 export const PlivoResponse = () => Plivo.Response()
-
-if (!Meteor.settings.plivo) {
-    throw new Meteor.Error(404, 'Plivo settings authId and authToken are not provided, please add them to Meteor.settings.plivo');
-}
-
-if(!PlivoAPI) {
-  PlivoAPI = Plivo.RestAPI({
-      authId: Meteor.settings.plivo.authId,
-      authToken: Meteor.settings.plivo.authToken
+export const PlivoAPI = (config) => {
+  if (!config) {
+    throw new Meteor.Error(404, 'Plivo settings authId and authToken are not provided');
+  }
+  if (!config.authToken || !config.authId) {
+    throw new Meteor.Error(404, 'Plivo authId Meteor authToken are not provided, please add them as parameter');
+  }
+  Plivo.RestAPI({
+      authId: config.authId,
+      authToken: config.authToken
   });
-}
+};
 
 
