@@ -3,6 +3,6 @@ node_js:
   - 5.7
 install:
   - sudo curl https://install.meteor.com/ | /bin/sh
-  - npm install -g spacejam@1.6.0-rc.1
+  - npm install -g coffeescript spacejam@1.6.0
 script:
   - spacejam test-packages ./ --settings ./dummy-settings.json
