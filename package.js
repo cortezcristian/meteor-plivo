@@ -6,19 +6,20 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Npm.depends({
-  plivo: '0.3.3'
-});
-
 Package.onUse(function(api) {
   api.versionsFrom('1.3.4.1');
   api.use('ecmascript');
-  api.mainModule('meteor-plivo.js');
+  api.mainModule('meteor-plivo.js', 'server');
 });
 
 Package.onTest(function(api) {
   api.use('ecmascript');
-  api.use('tinytest');
+  api.use('practicalmeteor:mocha');
+  api.use('practicalmeteor:chai');
   api.use('meteor-plivo');
-  api.mainModule('meteor-plivo-tests.js');
+  api.mainModule('meteor-plivo-tests.js', 'server');
+});
+
+Npm.depends({
+  plivo: '0.3.3'
 });
