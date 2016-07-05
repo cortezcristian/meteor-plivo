@@ -5,4 +5,4 @@ install:
   - sudo curl https://install.meteor.com/ | /bin/sh
   - npm install -g spacejam@rc
 script:
-  - spacejam test-packages --driver-package=practicalmeteor:mocha-console-reporter ./ --settings ./dummy-settings.json
+  - spacejam test-packages ./ --settings ./dummy-settings.json
