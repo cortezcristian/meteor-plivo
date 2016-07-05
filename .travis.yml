@@ -5,4 +5,4 @@ install:
   - sudo curl https://install.meteor.com/ | /bin/sh
   - npm install -g coffee-script spacejam@1.6.2-rc.1
 script:
-  - spacejam test-packages ./ --settings ./dummy-settings.json
+  - spacejam test-packages --once --driver-package=test-server-tests-in-console-once ./ --settings ./dummy-settings.json
