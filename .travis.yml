@@ -3,6 +3,6 @@ node_js:
   - 5.7
 install:
   - sudo curl https://install.meteor.com/ | /bin/sh
-  - npm install -g phantomjs-prebuilt spacejam@rc
+  - npm install -g spacejam@rc
 script:
-  - spacejam test-packages --driver-package=practicalmeteor:mocha-console-reporter ./ --settings ./dummy-settings.json --use-system-phantomjs
+  - spacejam test-packages --driver-package=practicalmeteor:mocha-console-reporter ./ --settings ./dummy-settings.json
