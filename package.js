@@ -1,6 +1,6 @@
 Package.describe({
   name: 'cortezcristian:meteor-plivo',
-  version: '0.0.3',
+  version: '0.0.4',
   summary: 'Plivo NodeJS client API port for Meteor to create powerful Voice and SMS applications.',
   git: 'https://github.com/cortezcristian/meteor-plivo',
   documentation: 'README.md'
